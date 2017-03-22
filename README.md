@@ -13,7 +13,28 @@
   -Default = "Persistent,Ephemeral,System,SwapUsage,MemoryUsage,CPU(User),CPU(Sys),CPU(Wait),Load"
 #### BOSH_DEPLOYMENTS
   -Default = cf_perfsh4
-  
+#### CF_ENABLE
+  -Default = True
+#### CF_METRIC
+  -Default = cpu,memory,disk,
+#### CF_APPS
+  -Default = "app"
+  -NOTE: * for all apps
+#### CF_TARGET_HOST
+  -Default = http://localhost
+#### CF_ADMIN_USER
+  -Default = admin 
+#### CF_ADMIN_PWD
+  -Default = c1oudc0w
+#### CF_ORG
+  -Default = ORG
+#### GRAPHITE_HOST
+  -Default = 127.0.0.1
+#### GRAPHITE_PREFIX
+  -Default = CF_BOSH
+#### GRAPHITE_INTERVAL
+  -Default = 15
+
 ## Usage
 * Run Diamond Collector
 ```sh
