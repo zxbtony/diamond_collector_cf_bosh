@@ -12,7 +12,7 @@
 #### BOSH_METRIC
   -Default = "Persistent,Ephemeral,System,SwapUsage,MemoryUsage,CPU(User),CPU(Sys),CPU(Wait),Load"
 #### BOSH_DEPLOYMENTS
-  -Default = cf_perfsh4
+  -Default = demployment
 #### CF_ENABLE
   -Default = True
 #### CF_METRIC
@@ -31,7 +31,7 @@
 #### GRAPHITE_HOST
   -Default = 127.0.0.1
 #### GRAPHITE_PREFIX
-  -Default = CF_BOSH
+  -Default = PERF
 #### GRAPHITE_INTERVAL
   -Default = 15
 
