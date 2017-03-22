@@ -17,7 +17,7 @@
 ## Usage
 * Run Diamond Collector
 ```sh
-docker run --rm -it \
+docker run --rm -d \
 	-e BOSH_TARGET_HOST=127.0.0.1 \
 	-e BOSH_ADMIN_USER=admin \
 	-e BOSH_ADMIN_PWD=admin \
@@ -34,5 +34,5 @@ docker run --rm -it \
 	-e GRAPHITE_HOST=127.0.0.1 \
 	-e GRAPHITE_PREFIX=CF_BOSH \
 	-e GRAPHITE_INTERVAL=15 \
-	bosh_cf_graphite_collector
+	zxbtony/diamond_collector_cf_bosh
 ```
