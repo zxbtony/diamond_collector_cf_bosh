@@ -34,7 +34,7 @@ class BoshCollector(diamond.collector.Collector):
         return config
 
     def record_metric(self, lines, metrics, metric, category, col):
-        for i in range(RowContent.METRIC_START_LINE, len(lines) + RowContent.METRIC_LAST_LINE):
+        for i in range(RowContent.METRIC_START_LINE, len(lines) + RowContent.METRIC_LAST_LINE+1):
             cols = "".join(lines[i].split()).split("|")
             if 'n/a' not in cols[col]:
                 if '%' in cols[col]:
