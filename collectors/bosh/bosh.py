@@ -72,7 +72,7 @@ class BoshCollector(diamond.collector.Collector):
                     self.record_metric(lines, metrics, metric, category, col)
                 elif 'Load' in metric:
                     col = "".join(lines[RowContent.HEADER_1].split()).split("|").index(metric)
-                    for i in range(RowContent.METRIC_START_LINE, len(lines) + RowContent.METRIC_LAST_LINE):
+                    for i in range(RowContent.METRIC_START_LINE, len(lines) + RowContent.METRIC_LAST_LINE+1):
                         cols = "".join(lines[i].split()).split("|")
                         metrics['.'.join([cols[1].split("(")[0], category, 'avg01'])] = cols[col].split(",")[0]
                         metrics['.'.join([cols[1].split("(")[0], category, 'avg05'])] = cols[col].split(",")[1]
